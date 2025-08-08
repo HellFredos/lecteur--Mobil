@@ -1,1 +1,18 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#0b1220;color:#e6eef8;padding:18px}
+header h1{margin:0;font-size:20px}
+.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}
+.controls input{padding:6px;border-radius:6px;border:1px solid #26323a;background:#07121a;color:#e6eef8}
+.controls button{padding:8px 10px;border-radius:6px;border:0;background:#1e90ff;color:#031022;cursor:pointer}
+.player{display:flex;gap:12px;align-items:center;margin-top:8px}
+.now{flex:1;min-width:220px}
+.nav button{font-size:18px;padding:8px 12px;border-radius:8px;border:0;background:#18324a;color:#e6eef8;cursor:pointer}
+.playlists{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+.playlist{background:rgba(255,255,255,0.03);padding:10px;border-radius:10px}
+.playlist h3{margin:0 0 6px 0;display:flex;justify-content:space-between;align-items:center}
+.track{padding:6px;border-radius:6px;cursor:pointer;margin-bottom:4px}
+.track:hover{background:rgba(255,255,255,0.02)}
+.active{background:rgba(255,255,255,0.06)}
+footer{margin-top:20px;opacity:0.8}
+label{font-size:14px}
+.smallbtn{padding:6px 8px;border-radius:6px;border:0;background:#123045;color:#e6eef8;cursor:pointer;margin-left:6px}
 
