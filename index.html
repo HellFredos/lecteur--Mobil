@@ -1,1 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lecteur MP3 — GitHub Pages</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Lecteur MP3 (GitHub Pages)</h1>
+  <p id="subtitle">Chargement...</p>
+</header>
+
+<section class="controls">
+  <label>Repo owner: <input id="owner" placeholder="hellfredos"></label>
+  <label>Repo name: <input id="repo" placeholder="lecteur-mp3"></label>
+  <label>Branch: <input id="branch" placeholder="main"></label>
+  <button id="loadBtn">Charger playlists depuis GitHub</button>
+  <label><input id="globalShuffle" type="checkbox"> Shuffle global</label>
+  <label><input id="continuous" type="checkbox" checked> Lecture continue</label>
+</section>
+
+<section class="player">
+  <div class="now">
+    <div id="nowTitle">Aucune piste</div>
+    <audio id="audio" controls></audio>
+  </div>
+  <div class="nav">
+    <button id="prev">⏮️</button>
+    <button id="play">▶️/⏸️</button>
+    <button id="next">⏭️</button>
+  </div>
+</section>
+
+<section id="playlists" class="playlists"></section>
+
+<footer>
+  <small>Ce lecteur lit les MP3 stockés dans <code>playlists/</code> de ton dépôt GitHub public. Voir README pour instructions.</small>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
 
